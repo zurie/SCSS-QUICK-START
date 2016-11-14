@@ -1,12 +1,12 @@
 // Variables
 
-$gradient1: green;
-$gradient2: red;
+$gradient1: #3a1683;
+$gradient2: #6f8ad5;
 
-$header-color: purple;
-$footer-color: darken($header-color, 20);
-$header-font-color: white;
-$footer-font-color: white;
+$header-color: #291243;
+$footer-color: lighten($header-color, 20);
+$header-font-color: #CCFF00;
+$footer-font-color: #ccff00;
 //
 // Basic styling
 //
