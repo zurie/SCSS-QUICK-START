@@ -1,0 +1,23 @@
+{
+  "name": "sass-quick-start",
+  "version": "0.0.0",
+  "description": "Quickstart for Gulp, SCSS, Notifier, Browser Sync, Minify",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zurie/SCSS-QUICK-START.git"
+  },
+  "author": "Zuriel Andrusyshyn",
+  "bugs": {
+    "url": "https://github.com/zurie/SCSS-QUICK-START/issues"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.17.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "*",
+    "gulp-minify-css": "*",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "*",
+    "gulp-sass": "*"
+  }
+}
