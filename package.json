@@ -13,6 +13,7 @@
   "devDependencies": {
     "browser-sync": "^2.17.6",
     "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
     "gulp-concat": "*",
     "gulp-minify-css": "*",
     "gulp-notify": "^2.2.0",

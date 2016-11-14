@@ -3,6 +3,7 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	minifyCSS = require('gulp-minify-css'),
 	rename = require('gulp-rename'),
+	autoprefixer = require('gulp-autoprefixer'),
 	plumber      = require('gulp-plumber'), // Helps prevent stream crashing on errors
 	notify = require("gulp-notify"),
 	browserSync = require('browser-sync').create();
@@ -27,6 +28,10 @@ gulp.task('sass', function() {
 			// includePaths: [paths.styles.src, bourbon].concat(neat)
 		}))
 		.pipe(concat(gulpPaths.cssDist + 'app.css'))
+		.pipe(autoprefixer({
+			browsers: ['last 3 versions', 'ie >=9', 'safari >=5'],
+			cascade: false
+		}))
 		.pipe(gulp.dest('./'))
 		.pipe(minifyCSS())
 		.pipe(rename('app.min.css'))
